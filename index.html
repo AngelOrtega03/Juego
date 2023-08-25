@@ -5,14 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DONT STOP MOVING THE SQUARE!</title>
+    <link href="styles.css" rel="stylesheet"/>
 </head>
-
 <body>
+    <h1>DON'T STOP MOVING THE SQUARE!</h1>
     <script src="phaser-3.60.0/dist/phaser.js"></script>
-    
-        
     <script type="text/javascript" src="scene1.js"></script>
     <script type="text/javascript" src="game.js"></script>
-
+    <h2>How to play:</h2>
+    <p>Use the mouse cursor to click anywhere on the game screen.</p>
+    <p>Once the square starts moving, click again anywhere of the screen before the square reaches where you clicked before.</p>
+    <p>Each click gives you 10 points.</p>
+    <p>You win once you get 1000.</p>
+    <div class="horizontal-center">
+        <button type="submit" onclick="location.reload()">Restart</button>
+    </div>
 </body>
 </html>
