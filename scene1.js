@@ -39,7 +39,7 @@ class scene1 extends Phaser.Scene {
             objetivo.y = pointer.worldY;  // guardame la posición del puntero en y  en el vector y del objetivo 
             this.physics.moveToObject(player,objetivo,500); // move el jugador al vector del objetivo
             score += 10;
-            scoreText.setText('Score: ' + score);
+            scoreText.setText('score: ' + score);
         });
     }
 
@@ -52,7 +52,7 @@ class scene1 extends Phaser.Scene {
             //setTimeout(loseau.pause(),10000);
             return;
         }
-        if (score>=100)
+        if (score>=1000)
         {
             player.setVelocity(0);
             this.physics.pause();
@@ -61,6 +61,5 @@ class scene1 extends Phaser.Scene {
             //setTimeout(winau.pause(),19000);
             return;
         }
-    
     }
 }
