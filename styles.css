@@ -1,0 +1,31 @@
+h1 {
+    font-family: Impact;
+    font-size: xx-large;
+}
+
+h1, h2, p {
+    color: whitesmoke;
+    text-align: center;
+}
+
+body {
+    background-color: #120f0f;
+}
+
+fieldset {
+    color: white;
+}
+
+.container {
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+}
+  
+.horizontal-center {
+    text-align: center;
+}
+
+button {
+    text-align: center;
+}
