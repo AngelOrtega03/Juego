@@ -32,7 +32,7 @@ class scene1 extends Phaser.Scene {
         this.input.on("pointerdown",()=>{ 
             objetivo.x = pointer.worldX; // guardame la posición del puntero en x  en el vector x del objetivo 
             objetivo.y = pointer.worldY;  // guardame la posición del puntero en y  en el vector y del objetivo 
-            this.physics.moveToObject(player,objetivo,500); // move el jugador al vector del objetivo
+            this.physics.moveToObject(player,objetivo,velocidad); // move el jugador al vector del objetivo
             score += 10;
             velocidad += 10;
             scoreText.setText('score: ' + score);
