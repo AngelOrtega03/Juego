@@ -26,5 +26,6 @@ var score = 0;
 var scoreText; 
 var win;
 var lose;
+var velocidad;
 var winau = new Audio ("assets/win.mp3");
 var loseau = new Audio ("assets/lose.mp3");
