@@ -16,6 +16,7 @@ class scene1 extends Phaser.Scene {
         //fondo.setScale(6);
 
         distancia= 0;
+        velocidad = 10;
         objetivo= new Phaser.Math.Vector2(0,0);
 
         player=this.physics.add.sprite(400,300,"blanco");
@@ -33,6 +34,7 @@ class scene1 extends Phaser.Scene {
             objetivo.y = pointer.worldY;  // guardame la posición del puntero en y  en el vector y del objetivo 
             this.physics.moveToObject(player,objetivo,500); // move el jugador al vector del objetivo
             score += 10;
+            velocidad += 10;
             scoreText.setText('score: ' + score);
         });
     }
